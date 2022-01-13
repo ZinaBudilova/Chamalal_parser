@@ -4,7 +4,7 @@ SmallNum [<num>:]
 SmallNum [<num>:] Da  
 DecNum [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound) |(HundMark NumCompos NumClass)
 OneHundred [<num>:] (HundRound) | (NumCompos NumClass)
-OneThousand [<num>:] (Da | NumCompos NumClass)
+OneThousand [<num>:] (Da) | (NumCompos NumClass)
 
 LEXICON One
 се # 1
