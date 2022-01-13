@@ -1,20 +1,22 @@
 PATTERNS
 One [<num>:] OneClass
 SmallNum [<num>:]
-SmallNum [<num>:] Da
-DecNum [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound ) |(HundMark NumCompos NumClass)
-OneHundred [<num>:] (HundRound | NumCompos NumClass)
+SmallNum [<num>:] Da  
+DecNum [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound) |(HundMark NumCompos NumClass)
+OneHundred [<num>:] (HundRound) | (NumCompos NumClass)
 OneThousand [<num>:] (Da | NumCompos NumClass)
 
 LEXICON One
 се # 1
 
 LEXICON OneClass
-<1cl>:в
-<2cl>:
-<3cl>:б
-<4cl>:л
-<5cl>:
+<1cl><sg>:в
+<2cl><sg>:
+<1-2cl><pl>:би
+<3cl><sg>:б
+<4cl><sg>:л
+<5cl><sg>:
+<3-5cl><pl>:
 
 LEXICON SmallNum
 ечIи # 2
@@ -34,7 +36,7 @@ LEXICON DecNum
 ечI # 2
 лъалъ # 3
 бо{в} # 4
-иссв # 5
+и‎ссв # 5
 анлI # 6
 акь{в} # 7
 бекь # 8
