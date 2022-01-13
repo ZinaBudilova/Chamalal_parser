@@ -1,0 +1,6 @@
+Alphabet %<x10%> %<x1%>:0 %<x1%> ;
+
+Rules
+
+"drop <x1> after <x10>"
+%<x1%>:0 <=> %<10%> _ ;

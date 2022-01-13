@@ -1,0 +1,66 @@
+PATTERNS
+One [<num>:] OneClass
+SmallNum [<num>:]
+SmallNum [<num>:] Da
+DecNum [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound ) |(HundMark NumCompos NumClass)
+OneHundred [<num>:] (HundRound | NumCompos NumClass)
+OneThousand [<num>:] (Da | NumCompos NumClass)
+
+LEXICON One
+се # 1
+
+LEXICON OneClass
+<1cl>:в
+<2cl>:
+<3cl>:б
+<4cl>:л
+<5cl>:
+
+LEXICON SmallNum
+ечIи # 2
+лъалъа # 3
+боъу # 4
+иссу # 5 
+анлIи # 6
+акьу # 7
+бекьи # 8
+ачIа # 9
+ацIа # 10
+
+LEXICON Da
+<x1>:да
+
+LEXICON DecNum
+ечI # 2
+лъалъ # 3
+бо{в} # 4
+иссв # 5
+анлI # 6
+акь{в} # 7
+бекь # 8
+ачI # 9
+
+LEXICON DecMark
+<x10>:ацIа
+
+LEXICON NumCompos
+<compos>:{А}чIекI
+
+LEXICON NumClass
+<1cl>:у
+<2cl>:ви
+<3cl>:уб
+<4cl>:ул
+<5cl>:ви
+
+LEXICON OneHundred
+бегь # 100
+
+LEXICON HundMark
+<x100>:{а}бегь
+
+LEXICON HundRound
+<round>:анна
+
+LEXICON OneThousand
+азал # 1000
