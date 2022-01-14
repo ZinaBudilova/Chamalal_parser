@@ -1,8 +1,9 @@
 PATTERNS
 One [<num>:] OneClass
-SmallNum [<num>:]
-SmallNum [<num>:] Da  
-DecNum [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound) |(HundMark NumCompos NumClass)
+(SmallNum) | (Ten) [<num>:] Da?
+Ten [<num>:] TenCompos
+(DecNum) | (Ninety) [<num>:] (DecMark Da) | (NumCompos NumClass) | (HundMark HundRound) |(HundMark NumCompos NumClass)
+Ninety [<num>:] NinetyRound
 OneHundred [<num>:] (HundRound) | (NumCompos NumClass)
 OneThousand [<num>:] (Da) | (NumCompos NumClass)
 
@@ -11,42 +12,62 @@ LEXICON One
 
 LEXICON OneClass
 <1cl><sg>:ев
-<2cl><sg>:е
+<2cl><sg>:е[vgakv]
+<2cl><sg>:ей[gig]
 <1-2cl><pl>:еби
 <3cl><sg>:еб
 <4cl><sg>:ел
 <5cl><sg>:е
-<3-5cl><pl>:е̄
+<3-5cl><pl>:е̄[vgakv]
+<3-5cl><pl>:ер[gig]
 
 LEXICON SmallNum
-ечIи # 2
-лъалъа # 3
-боъу # 4
-иссу # 5 
+ечIи[vgakv] # 2  
+чIе[gig] # 2
+лъалъа[vgakv] # 3
+лъабу[gig] # 3
+боъу[vgakv] # 4
+буъу[gig] # 4
+иссу[vgakv] # 5 
+ишту[gig] # 5 
 анлIи # 6
-акьу # 7
+акьу[vgakv] # 7
+гакьу[gig] # 7 
 бекьи # 8
-ачIа # 9
-ацIа # 10
+ачIа[vgakv] # 9
+гачIа[gig] # 9
 
 LEXICON Da
 <x1>:да
 
+LEXICON Ten
+ацIа[vgakv] # 10
+гьазза[gig] # 10 
+
+LEXICON TenCompos
+<compos>:л
+
 LEXICON DecNum
-ечI # 2
-лъалъ # 3
-б{о}{в} # 4
-и‎̃ссв # 5
+ечI[vgakv] # 2
+чIаъ[gig] # 2
+лъалъ[vgakv] # 3
+лъаб[gig] # 3
+б{о}{в}[vgakv] # 4
+боъ[gig] # 4
+и‎̃ссв[vgakv] # 5
+ишт[gig] # 5
 анлI # 6
-акь{в} # 7
+акь{в}[vgakv] # 7
+гьакь[gig] # 7
 бекь # 8
-ачI # 9
+гьачI[gig] # 9
 
 LEXICON DecMark
 <x10>:ацIа
 
 LEXICON NumCompos
-<compos>:{А}чIекI
+<compos>:{А}чIекI[vgakv]
+<compos>:азачIекI[gig]
 
 LEXICON NumClass
 <1cl>:у
@@ -55,14 +76,22 @@ LEXICON NumClass
 <4cl>:ул
 <5cl>:ви
 
+LEXICON Ninety
+ачI[vgakv] # 9
+
+LEXICON NinetyRound
+<round>:унна
+
 LEXICON OneHundred
-бегь # 100
+бегь[vgakv] # 100
+беш[gig] # 100
 
 LEXICON HundMark
 <x100>:{а}бегь
 
 LEXICON HundRound
-<round>:анна
+<round>:анна[vgakv]
+<round>:анда[gig]
 
 LEXICON OneThousand
 азал # 1000
