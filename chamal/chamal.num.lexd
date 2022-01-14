@@ -7,16 +7,16 @@ OneHundred [<num>:] (HundRound) | (NumCompos NumClass)
 OneThousand [<num>:] (Da) | (NumCompos NumClass)
 
 LEXICON One
-се # 1
+с # 1
 
 LEXICON OneClass
-<1cl><sg>:в
-<2cl><sg>:
-<1-2cl><pl>:би
-<3cl><sg>:б
-<4cl><sg>:л
-<5cl><sg>:
-<3-5cl><pl>:
+<1cl><sg>:ев
+<2cl><sg>:е
+<1-2cl><pl>:еби
+<3cl><sg>:еб
+<4cl><sg>:ел
+<5cl><sg>:е
+<3-5cl><pl>:е̄
 
 LEXICON SmallNum
 ечIи # 2
@@ -35,8 +35,8 @@ LEXICON Da
 LEXICON DecNum
 ечI # 2
 лъалъ # 3
-бо{в} # 4
-и‎ссв # 5
+б{о}{в} # 4
+и‎̃ссв # 5
 анлI # 6
 акь{в} # 7
 бекь # 8
