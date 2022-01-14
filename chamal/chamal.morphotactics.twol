@@ -1,6 +1,8 @@
-Alphabet %<x10%> %<x1%>:0 %<x1%> ;
+Alphabet %<round%> %<hundround%> %<hundround%>:0 ;
 
 Rules
 
-"drop <x1> after <x10>"
-%<x1%>:0 <=> %<x10%> _ ;
+"drop <hundround> before <round>"
+%<hundround%>:0 <=> _ %<round%> ;
+
+
