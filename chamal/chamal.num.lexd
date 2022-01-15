@@ -1,13 +1,13 @@
 PATTERNS
 One [<num>:] OneClass
-(SmallNum) | (Ten) [<num>:] Da?
+((SmallNum) | (Ten) [<num>:] Round?)[^[vgakv,gig]]
 Ten [<num>:] TenCompos
-(DecNum|Ninety [<num>:] (DecMark Da?) | (NumCompos NumClass) | (HundMark HundRound) | (HundMark NumCompos NumClass))[vgakv,-gig]
-(DecNum [<num>:] DecMark Da?|NumCompos)[gig,-vgakv]
-Ninety [<num>:] NinetyRound
-(OneHundred [<num>:] (HundRound) | (NumCompos NumClass))[vgakv,-gig]
-(OneHundred [<num>:] HundRound Da?|NumCompos)[gig,-vgakv]
-OneThousand [<num>:] (Da?) | (NumCompos NumClass)
+(DecNum|Ninety [<num>:] (DecMark Round?) | (NumCompos NumClass) | (HundMark HundRound Round?) | (HundMark NumCompos NumClass))[vgakv,-gig]
+(DecNum [<num>:] DecMark Round?|NumCompos)[gig,-vgakv]
+(Ninety [<num>:] HundRound Round?)[vgakv,-gig]
+(OneHundred [<num>:] (HundRound Round?) | (NumCompos NumClass))[vgakv,-gig]
+(OneHundred [<num>:] HundRound Round?|NumCompos)[gig,-vgakv]
+(OneThousand [<num>:] (Round?) | (NumCompos NumClass))[vgakv,-gig]
 
 
 LEXICON One
@@ -40,8 +40,9 @@ LEXICON SmallNum
 ачIа[vgakv] # 9
 гачIа[gig] # 9
 
-LEXICON Da
-<round>:да
+LEXICON Round
+<round>:{д}а[vgakv]
+<round>:да[gig]
 
 LEXICON Ten
 ацIа[vgakv] # 10
@@ -83,9 +84,6 @@ LEXICON NumClass
 LEXICON Ninety
 ачI[vgakv] # 9
 
-LEXICON NinetyRound
-<round>:унна
-
 LEXICON OneHundred
 бегь[vgakv] # 100
 беш[gig] # 100
@@ -94,8 +92,7 @@ LEXICON HundMark
 <x100>:{а}бегь
 
 LEXICON HundRound
-<hundround>:анна[vgakv]
-<hundround>:ан[gig]
+<x100>:{у}н
 
 LEXICON OneThousand
 азал # 1000
