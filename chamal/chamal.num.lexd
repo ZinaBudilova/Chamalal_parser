@@ -1,28 +1,28 @@
 PATTERNS
 One [<num>:] OneClass
-((SmallNum) | (Ten) [<num>:] Round?)[^[vgakv,gig]]
+((SmallNum) | (Ten) [<num>:] Card?)[^[vgakv,gig]]
 Ten [<num>:] TenCompos
-(DecNum|Ninety [<num>:] (DecMark Round?) | (NumCompos NumClass) | (HundMark HundRound Round?) | (HundMark NumCompos NumClass))[vgakv,-gig]
-(DecNum [<num>:] DecMark Round?|NumCompos)[gig,-vgakv]
-(Ninety [<num>:] HundRound Round?)[vgakv,-gig]
-(OneHundred [<num>:] (HundRound Round?) | (NumCompos NumClass))[vgakv,-gig]
-(OneHundred [<num>:] HundRound Round?|NumCompos)[gig,-vgakv]
-(OneThousand [<num>:] (Round?) | (NumCompos NumClass))[vgakv,-gig]
+(DecNum|Ninety [<num>:] (DecMark Card?) | (NumCompos NumClass) | (HundMark HundCard Card?) | (HundMark NumCompos NumClass))[vgakv,-gig]
+(DecNum [<num>:] DecMark Card?|NumCompos)[gig,-vgakv]
+(Ninety [<num>:] HundCard Card?)[vgakv,-gig]
+(OneHundred [<num>:] (HundCard Card?) | (NumCompos NumClass))[vgakv,-gig]
+(OneHundred [<num>:] HundCard Card?|NumCompos)[gig,-vgakv]
+(OneThousand [<num>:] (Card?) | (NumCompos NumClass))[vgakv,-gig]
 
 
 LEXICON One
-с # 1
+с{е} # 1
 
 LEXICON OneClass
-<1cl><sg>:ев
-<2cl><sg>:е[vgakv]
-<2cl><sg>:ей[gig]
-<1-2cl><pl>:еби
-<3cl><sg>:еб
-<4cl><sg>:ел
-<5cl><sg>:е
+<1cl><sg>:в
+<2cl><sg>:[vgakv]
+<2cl><sg>:й[gig]
+<1-2cl><pl>:би
+<3cl><sg>:б
+<4cl><sg>:л
+<5cl><sg>:
 <3-5cl><pl>:е̄[vgakv]
-<3-5cl><pl>:ер[gig]
+<3-5cl><pl>:р[gig]
 
 LEXICON SmallNum
 ечIи[vgakv] # 2  
@@ -40,7 +40,7 @@ LEXICON SmallNum
 ачIа[vgakv] # 9
 гачIа[gig] # 9
 
-LEXICON Round
+LEXICON Card
 <round>:{д}а[vgakv]
 <round>:да[gig]
 
@@ -91,7 +91,7 @@ LEXICON OneHundred
 LEXICON HundMark
 <x100>:{а}бегь
 
-LEXICON HundRound
+LEXICON HundCard
 <x100>:{у}н
 
 LEXICON OneThousand
