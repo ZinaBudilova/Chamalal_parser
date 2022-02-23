@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := chamal.analyzer.hfst
+.DEFAULT_GOAL := chamal.analyzer.tr.hfst
 
 # generate analyzer and generator
 chamal.analyzer.hfst: chamal.generator.hfst
@@ -16,18 +16,18 @@ chamal.morphotactics.twol.hfst: chamal.morphotactics.twol
 	
 # generate transliterators
 cy2la.transliterator.hfst: la2cy.transliterator.hfst
-    hfst-invert $< -o $@
+	hfst-invert $< -o $@
 la2cy.transliterator.hfst: correspondence.hfst
-    hfst-repeat -f 1 $< -o $@
+	hfst-repeat -f 1 $< -o $@
 correspondence.hfst: correspondence
-    hfst-strings2fst -j correspondence -o $@
+	hfst-strings2fst -j correspondence -o $@
 
 # generate analyzer and generator for transcription
 chamal.analyzer.tr.hfst: chamal.generator.tr.hfst
-    hfst-invert $< -o $@
+	hfst-invert $< -o $@
 chamal.generator.tr.hfst: chamal.generator.hfst cy2la.transliterator.hfst
-    hfst-compose $^ -o $@
+	hfst-compose $^ -o $@
     
 # remove all hfst files
 clean:
-    rm *.hfst
+	rm *.hfst
