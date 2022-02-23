@@ -41,8 +41,8 @@ LEXICON SmallNum
 гачIа[gig] # 9
 
 LEXICON Card
-<round>:{д}а[vgakv]
-<round>:да[gig]
+<card>:{д}а[vgakv]
+<card>:да[gig]
 
 LEXICON Ten
 ацIа[vgakv] # 10
