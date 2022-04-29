@@ -11,7 +11,7 @@ Ten [<num>:] TenCompos
 
 
 LEXICON One
-с{е} # 1
+се # 1
 
 LEXICON OneClass
 <1cl><sg>:в
@@ -21,7 +21,7 @@ LEXICON OneClass
 <3cl><sg>:б
 <4cl><sg>:л
 <5cl><sg>:
-<3-5cl><pl>:е̄[vgakv]
+<3-5cl><pl>:е[vgakv]
 <3-5cl><pl>:р[gig]
 
 LEXICON SmallNum
@@ -56,9 +56,9 @@ LEXICON DecNum
 чIаъ[gig] # 2
 лъалъ[vgakv] # 3
 лъаб[gig] # 3
-б{о}{в}[vgakv] # 4
+бо{в}[vgakv] # 4
 боъ[gig] # 4
-и‎̃ссв[vgakv] # 5
+и2ссв[vgakv] # 5
 ишт[gig] # 5
 анлI # 6
 акь{в}[vgakv] # 7
@@ -71,7 +71,7 @@ LEXICON DecMark
 <x10>:аз[gig]
 
 LEXICON NumCompos
-<compos>:{А}чIекI[vgakv]
+<compos>:{А}{2}чIекI[vgakv]
 <compos>:азачIекIу[gig]
 
 LEXICON NumClass
