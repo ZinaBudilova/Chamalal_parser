@@ -1,7 +1,18 @@
 PATTERNS
+NomSg
+OblSg
+Plural
+
+
+PATTERN NomSg
 NounSg [<noun><sg>:] NomCase
+
+PATTERN OblSg
 NounSgObl [<noun><sg>:] OblCase
+
+PATTERN Plural
 NounPl [<noun><pl>:] (NomCase | OblCase)
+
 
 LEXICON NomCase
 <nom>:

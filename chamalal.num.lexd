@@ -1,12 +1,34 @@
 PATTERNS
+NumberOne
+NumbersUpToTen
+NumberTen
+CompositeNumbers
+NumberNinety
+NumberOneHundred
+NumberOneThousand
+
+
+PATTERN NumberOne
 One [<num>:] OneClass
+
+PATTERN NumbersUpToTen
 ((SmallNum) | (Ten) [<num>:] Card?)[^[vgakv,gig]]
+
+PATTERN NumberTen
 Ten [<num>:] TenCompos
+
+PATTERN CompositeNumbers
 (DecNum|Ninety [<num>:] (DecMark Card?) | (NumCompos NumClass) | (HundMark HundCard Card?) | (HundMark NumCompos NumClass))[vgakv,-gig]
 (DecNum [<num>:] DecMark Card?|NumCompos)[gig,-vgakv]
+
+PATTERN NumberNinety
 (Ninety [<num>:] HundCard Card?)[vgakv,-gig]
+
+PATTERN NumberOneHundred
 (OneHundred [<num>:] (HundCard Card?) | (NumCompos NumClass))[vgakv,-gig]
 (OneHundred [<num>:] HundCard Card?|NumCompos)[gig,-vgakv]
+
+PATTERN NumberOneThousand
 (OneThousand [<num>:] (Card?) | (NumCompos NumClass))[vgakv,-gig]
 
 
