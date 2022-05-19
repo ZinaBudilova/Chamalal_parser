@@ -23,6 +23,31 @@ LEXICON OblCase
 <gen>:лIе
 <dat>:лъа
 <aff>:хе
+<super.ess>:чI
+<super.el>:чIоо
+<super.lat>:оол
+<super.lat>:оо
+<cont.ess>:хъе
+<cont.ess>:хъ
+<cont.el>:хъоо
+<cont.lat>:хъе
+<cont.lat>:хъал
+<apud.ess>:хе
+<apud.el>:хоо
+<apud.lat>:хе
+<apud.lat>:хал
+<inter.ess>:лIа2
+<inter.el>:лIаноо
+<inter.lat>:лIи
+<inter.lat>:лIал
+<in.ess>:а2
+<in.el>:аноо
+<in.lat>:и
+<in.lat>:ал
+<sub.ess>:кьа2
+<sub.el>:кьаноо
+<sub.lat>:кьи
+<sub.lat>:кьал
 
 LEXICON NounSg
 а[3]
