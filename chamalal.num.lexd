@@ -12,41 +12,30 @@ PATTERN NumberOne
 One [<num>:] OneClass
 
 PATTERN NumbersUpToTen
-((SmallNum) | (Ten) [<num>:] Card?)[^[vgakv,gig]]
+((Digits) | (Ten) [<num>:] Card?)[^[vgakv,gig]]
 
 PATTERN NumberTen
-Ten [<num>:] TenCompos
+Ten [<num>:] TeenLinker
 
 PATTERN CompositeNumbers
-(DecNum|Ninety [<num>:] (DecMark Card?) | (NumCompos NumClass) | (HundMark HundCard Card?) | (HundMark NumCompos NumClass))[vgakv,-gig]
-(DecNum [<num>:] DecMark Card?|NumCompos)[gig,-vgakv]
+(Atoms|Ninety [<num>:] (Crowns Card?) | (Linker NumClass) | (Hundreds Interfix Card?) | (Hundreds Linker NumClass))[vgakv,-gig]
+(Atoms [<num>:] Crowns Card?|Linker)[gig,-vgakv]
 
 PATTERN NumberNinety
-(Ninety [<num>:] HundCard Card?)[vgakv,-gig]
+(Ninety [<num>:] Interfix Card?)[vgakv,-gig]
 
 PATTERN NumberOneHundred
-(OneHundred [<num>:] (HundCard Card?) | (NumCompos NumClass))[vgakv,-gig]
-(OneHundred [<num>:] HundCard Card?|NumCompos)[gig,-vgakv]
+(OneHundred [<num>:] (Interfix Card?) | (Linker NumClass))[vgakv,-gig]
+(OneHundred [<num>:] Interfix Card?|Linker)[gig,-vgakv]
 
 PATTERN NumberOneThousand
-(OneThousand [<num>:] (Card?) | (NumCompos NumClass))[vgakv,-gig]
+(OneThousand [<num>:] (Card?) | (Linker NumClass))[vgakv,-gig]
 
 
 LEXICON One
 се # 1
 
-LEXICON OneClass
-<1cl><sg>:в
-<2cl><sg>:[vgakv]
-<2cl><sg>:й[gig]
-<1-2cl><pl>:би
-<3cl><sg>:б
-<4cl><sg>:л
-<5cl><sg>:
-<3-5cl><pl>:е[vgakv]
-<3-5cl><pl>:р[gig]
-
-LEXICON SmallNum
+LEXICON Digits
 ечIи[vgakv] # 2  
 чIе[gig] # 2
 лъалъа[vgakv] # 3
@@ -62,18 +51,7 @@ LEXICON SmallNum
 ачIа[vgakv] # 9
 гачIа[gig] # 9
 
-LEXICON Card
-<card>:{д}а[vgakv]
-<card>:да[gig]
-
-LEXICON Ten
-ацIа[vgakv] # 10
-гьазза[gig] # 10 
-
-LEXICON TenCompos
-<compos>:л
-
-LEXICON DecNum
+LEXICON Atoms
 ечI[vgakv] # 2
 чIаъ[gig] # 2
 лъалъ[vgakv] # 3
@@ -88,20 +66,9 @@ LEXICON DecNum
 бекь # 8
 гьачI[gig] # 9
 
-LEXICON DecMark
-<x10>:ацIа[vgakv]
-<x10>:аз[gig]
-
-LEXICON NumCompos
-<compos>:{А}{2}чIекI[vgakv]
-<compos>:азачIекIу[gig]
-
-LEXICON NumClass
-<1cl>:у
-<2cl>:ви
-<3cl>:уб
-<4cl>:ул
-<5cl>:ви
+LEXICON Ten
+ацIа[vgakv] # 10
+гьазза[gig] # 10 
 
 LEXICON Ninety
 ачI[vgakv] # 9
@@ -110,11 +77,49 @@ LEXICON OneHundred
 бегь[vgakv] # 100
 беш[gig] # 100
 
-LEXICON HundMark
-<x100>:{а}бегь
-
-LEXICON HundCard
-<x100>:{у}н
-
 LEXICON OneThousand
 азал # 1000
+
+
+LEXICON TeenLinker
+<teen_linker>:л
+
+LEXICON Linker
+<linker>:{а}{2}чiекi[vgakv]
+<linker>:азачIекIу[gig]
+
+
+LEXICON OneClass
+<1cl><sg>:в
+<2cl><sg>:[vgakv]
+<2cl><sg>:й[gig]
+<1-2cl><pl>:би
+<3cl><sg>:б
+<4cl><sg>:л
+<5cl><sg>:
+<3-5cl><pl>:е[vgakv]
+<3-5cl><pl>:р[gig]
+
+LEXICON NumClass
+<1cl>:у
+<2cl>:ви
+<3cl>:уб
+<4cl>:ул
+<5cl>:ви
+
+
+LEXICON Crowns
+<crowns>:ацiа[vgakv]
+<crowns>:аз[gig]
+
+LEXICON Hundreds
+<hndr>:{а}бегь
+
+
+LEXICON Interfix
+:{у}н
+
+LEXICON Card
+<card>:{д}а[vgakv]
+<card>:да[gig]
+

@@ -3,10 +3,8 @@
 # generate num analyzer and generator
 num.analyzer.hfst: num.generator.hfst
 	hfst-invert $< -o $@
-num.generator.hfst: num.morphotactics.hfst chamalal.twol.hfst
+num.generator.hfst: num.lexd.hfst chamalal.twol.hfst
 	hfst-compose-intersect $^ -o $@
-num.morphotactics.hfst: num.lexd.hfst chamalal.morphotactics.twol.hfst
-	hfst-invert $< | hfst-compose-intersect - chamalal.morphotactics.twol.hfst | hfst-invert -o $@
 num.lexd.hfst: chamalal.num.lexd
 	lexd $< | hfst-txt2fst -o $@
 chamalal.twol.hfst: chamalal.twol
@@ -17,10 +15,8 @@ chamalal.morphotactics.twol.hfst: chamalal.morphotactics.twol
 # generate noun analyzer and generator
 noun.analyzer.hfst: noun.generator.hfst
 	hfst-invert $< -o $@
-noun.generator.hfst: noun.morphotactics.hfst chamalal.twol.hfst
+noun.generator.hfst: noun.lexd.hfst chamalal.twol.hfst
 	hfst-compose-intersect $^ -o $@
-noun.morphotactics.hfst: noun.lexd.hfst chamalal.morphotactics.twol.hfst
-	hfst-invert $< | hfst-compose-intersect - chamalal.morphotactics.twol.hfst | hfst-invert -o $@
 noun.lexd.hfst: chamalal.noun.lexd
 	lexd $< | hfst-txt2fst -o $@
 
