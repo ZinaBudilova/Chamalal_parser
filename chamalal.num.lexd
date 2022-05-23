@@ -85,7 +85,7 @@ LEXICON TeenLinker
 <teen_linker>:л
 
 LEXICON Linker
-<linker>:{а}{2}чiекi[vgakv]
+<linker>:{а}{2}чIекI[vgakv]
 <linker>:азачIекIу[gig]
 
 
@@ -109,7 +109,7 @@ LEXICON NumClass
 
 
 LEXICON Crowns
-<crowns>:ацiа[vgakv]
+<crowns>:ацIа[vgakv]
 <crowns>:аз[gig]
 
 LEXICON Hundreds
