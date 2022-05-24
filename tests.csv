@@ -1,0 +1,10 @@
+analysis,form,mustpass,source,page,description
+се<num><1-2cl><pl>,sebi,pass,Bokarev,71,NumberOne
+ечIи<num><card>,etʃʼidа,pass,Bokarev,71,NumbersUpToTen - Digits with Card
+чIе<num>,tʃʼe,pass,Bokarev,71,NumbersUpToTen - Digits without Card
+гьазза<num><card>,hаzzаdа,pass,Bokarev,72,NumbersUpToTen - Ten with Card
+ацIа<num>,аtsʼа,pass,Bokarev,72,NumbersUpToTen - Ten without Card
+ацIа<num><teen_linker>,аtsʼаl,Bokarev,72,NumberTen
+ачI<num><crowns><card>,аtʃʼunnа,pass,Bokarev,72,NumberNinety with Card
+ачI<num><crowns>,аtʃʼun,pass,Bokarev,72,NumberNinety without Card
+ачI<num><crowns><card>,аtʃʼunda,ignore,Bokarev,72,NumberNinety with wrong variation of Card

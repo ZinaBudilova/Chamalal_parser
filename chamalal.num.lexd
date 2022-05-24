@@ -18,18 +18,17 @@ PATTERN NumberTen
 Ten [<num>:] TeenLinker
 
 PATTERN CompositeNumbers
-(Atoms|Ninety [<num>:] (Crowns Card?) | (Linker NumClass) | (Hundreds Interfix Card?) | (Hundreds Linker NumClass))[vgakv,-gig]
+((Atoms|Ninety) [<num>:] ((Crowns Card?) | (Linker NumClass) | (Hundreds Card?) | (Hundreds HndrLinker NumClass)))[vgakv,-gig]
 (Atoms [<num>:] Crowns Card?|Linker)[gig,-vgakv]
 
 PATTERN NumberNinety
-(Ninety [<num>:] Interfix Card?)[vgakv,-gig]
+(Ninety [<num>:] NinetyCrowns Card?)[vgakv,-gig]
 
 PATTERN NumberOneHundred
-(OneHundred [<num>:] (Interfix Card?) | (Linker NumClass))[vgakv,-gig]
-(OneHundred [<num>:] Interfix Card?|Linker)[gig,-vgakv]
+(OneHundred [<num>:] (Card?) | (HndrLinker NumClass))[^[vgakv,gig]]
 
 PATTERN NumberOneThousand
-(OneThousand [<num>:] (Card?) | (Linker NumClass))[vgakv,-gig]
+(OneThousand [<num>:] (Card?) | (HndrLinker NumClass))[vgakv,-gig]
 
 
 LEXICON One
@@ -74,8 +73,8 @@ LEXICON Ninety
 ачI[vgakv] # 9
 
 LEXICON OneHundred
-бегь[vgakv] # 100
-беш[gig] # 100
+бегьа{н}[vgakv] # 100
+бешан[gig] # 100
 
 LEXICON OneThousand
 азал # 1000
@@ -85,8 +84,10 @@ LEXICON TeenLinker
 <teen_linker>:л
 
 LEXICON Linker
-<linker>:{а}{2}чIекI[vgakv]
-<linker>:азачIекIу[gig]
+<linker>:{А}чIекI
+
+LEXICON HndrLinker
+<linker>:чIекI
 
 
 LEXICON OneClass
@@ -112,12 +113,12 @@ LEXICON Crowns
 <crowns>:ацIа[vgakv]
 <crowns>:аз[gig]
 
+LEXICON NinetyCrowns
+<crowns>:ун[vgakv]
+
 LEXICON Hundreds
-<hndr>:{а}бегь
+<hndr>:{а}бегьа{н}[vgakv]
 
-
-LEXICON Interfix
-:{у}н
 
 LEXICON Card
 <card>:{д}а[vgakv]
