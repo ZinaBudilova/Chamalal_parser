@@ -1,8 +1,8 @@
 PATTERNS
 NomSg
 NomPl
-DativeAndAffectiveSg
-OblSg
+DatGroupCasesSg
+GenGroupCasesSg
 OblPl
 
 
@@ -12,21 +12,29 @@ NomSgForm [<noun><sg><nom>:]
 PATTERN NomPl
 NomPlForm [<noun><pl><nom>:]
 
-PATTERN DativeAndAffectiveSg
-DatAffStem [<noun><sg>:] DatAff
+PATTERN DatGroupCasesSg
+DatSgStem [<noun><sg>:] DatGroupCases
 
-PATTERN OblSg
-OblSgStem [<noun><sg>:] OblCase
+PATTERN GenGroupCasesSg
+OblSgStem [<noun><sg>:] GenGroupCases
 
 PATTERN OblPl
-OblPlStem [<noun><pl>:] OblCase
+OblPlStem [<noun><pl>:] DatGroupCases|GenGroupCases
 
 
-LEXICON DatAff
+LEXICON DatGroupCases
 <dat>:лъа
 <aff>:хе[gig] #affective case exists only in Gigatlian dialect
+<apud.ess>:хе[vgakv] # III in Magomedova, II in Bokarev
+<apud.el>:хоо[vgakv]
+<apud.lat>:хе[vgakv]
+<apud.lat>:хал[vgakv]
+<in.ess>:а2[vgakv] # V in Magomedova, III in Bokarev
+<in.el>:аноо[vgakv]
+<in.lat>:и[vgakv]
+<in.lat>:ал[vgakv]
 
-LEXICON OblCase
+LEXICON GenGroupCases
 <erg>:д
 <gen>:лI
 <gen>:лIе # according to Bokarev
@@ -40,18 +48,10 @@ LEXICON OblCase
 <cont.el>:хъоо[vgakv]
 <cont.lat>:хъе[vgakv]
 <cont.lat>:хъал[vgakv]
-<apud.ess>:хе[vgakv] # III in Magomedova, II in Bokarev
-<apud.el>:хоо[vgakv]
-<apud.lat>:хе[vgakv]
-<apud.lat>:хал[vgakv]
 <inter.ess>:лIа2[vgakv] # IV in Magomedova, III in Bokarev
 <inter.el>:лIаноо[vgakv]
 <inter.lat>:лIи[vgakv]
 <inter.lat>:лIал[vgakv]
-<in.ess>:а2[vgakv] # V in Magomedova, III in Bokarev
-<in.el>:аноо[vgakv]
-<in.lat>:и[vgakv]
-<in.lat>:ал[vgakv]
 <sub.ess>:кьа2[vgakv] # VI in Magomedova, IV in Bokarev
 <sub.el>:кьаноо[vgakv]
 <sub.lat>:кьи[vgakv]
@@ -1641,7 +1641,7 @@ LEXICON OblSgStem
 эъа[3]:эъи
 ээ[3]:ээ
 
-LEXICON DatAffStem
+LEXICON DatSgStem
 а[3]:ав # without any changes
 а2з[4]:а2зи
 а2з[5]:а2зи
