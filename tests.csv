@@ -13,8 +13,8 @@ analysis,form,mustpass,source,page,description
 бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred Upper-Gakvarian variation
 бегьа{н}<num><card>,behanda,ignore,Bokarev,72,NumberOneHundred wtih wrong (Gigatlian) variation of Card
 бешан<num><card>,beʃanda,pass,Bokarev,72,NumberOneHundred Gigatlian variation
-бегьа{н}<num><linker><4cl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass, Upper-Gakvarian variation
-бешан<num><linker><1-5cl>,beʃantʃʼekʼu,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass, Upper-Gakvarian variation
+бегьа{н}<num><linker><4cl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
+бешан<num><linker><1-5cl>,beʃantʃʼekʼu,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
 азал<num>,azal,pass,Bokarev,73,NumberOneThousand without Card
 азал<num><card>,azalda,pass,Bokarev,73,NumberOneThousand
 азал<num><linker><5cl>,azaltʃʼekʼʷi,pass,Bokarev,73,NumberOneThousand with Linker and NumClass
