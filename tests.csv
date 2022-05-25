@@ -4,7 +4,7 @@ analysis,form,mustpass,source,page,description
 чIе<num>,tʃʼe,pass,Bokarev,71,NumbersUpToTen - Gigatlian 2 without Card
 гьазза<num><card>,hazzada,pass,Bokarev,72,NumbersUpToTen - Ten
 ацIа<num>,atsʼa,pass,Bokarev,72,NumbersUpToTen - Ten without Card
-ацIа<num><teen_linker>,atsʼal,Bokarev,72,NumberTen with TeenLinker
+ацIа<num><teen_linker>,atsʼal,pass,Bokarev,72,NumberTen with TeenLinker
 ачIу{н}<num><card>,atʃʼunna,pass,Bokarev,72,NumberNinety
 ачIу{н}<num>,atʃʼun,pass,Bokarev,72,NumberNinety without Card
 ачIу{н}<num><card>,atʃʼunda,ignore,Bokarev,72,NumberNinety with wrong (Gigatlian) variation of Card
