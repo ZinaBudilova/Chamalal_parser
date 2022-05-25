@@ -10,7 +10,7 @@ analysis,form,mustpass,source,page,description
 ачIу{н}<num><card>,atʃʼunda,ignore,Bokarev,72,NumberNinety with wrong (Gigatlian) variation of Card
 ачIу{н}<num><linker><3cl>,atʃʼuⁿtʃʼekʼub,pass,Bokarev,72,NumberNinety with Linker and NumClass
 бегьа{н}<num>,behan,pass,Bokarev,72,NumberOneHundred without Card
-бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred, Upper-Gakvarian variation
+бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred Upper-Gakvarian variation
 бегьа{н}<num><card>,behanda,ignore,Bokarev,72,NumberOneHundred wtih wrong (Gigatlian) variation of Card
 бешан<num><card>,beʃanda,pass,Bokarev,72,NumberOneHundred Gigatlian variation
 бегьа{н}<num><linker><4cl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass, Upper-Gakvarian variation
