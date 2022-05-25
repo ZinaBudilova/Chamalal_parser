@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := chamalal.analyzer.tr.hfst
+.DEFAULT_GOAL := chamalal.analyzer.disam.hfst
 
 # generate num analyzer and generator
 num.analyzer.hfst: num.generator.hfst
@@ -33,11 +33,21 @@ correspondence.hfst: correspondence
 	hfst-strings2fst -j correspondence -o $@
 
 # generate analyzer and generator for transcription
-chamalal.analyzer.tr.hfst: chamalal.generator.tr.hfst
+chamalal.analyzer.disam.hfst: chamalal.generator.disam.hfst
 	hfst-invert $< -o $@
+chamalal.generator.disam.hfst: chamalal.generator.tr.hfst tr.regexp.hfst
+	hfst-compose -F -1 $< -2 $(word 2,$^) -o $@
+tr.regexp.hfst: transliterator.regexp
+	hfst-regexp2fst -o $@ < $<
 chamalal.generator.tr.hfst: chamalal.generator.hfst cy2la.transliterator.hfst
-	hfst-compose $^ -o $@
-    
+	hfst-compose $^ -o $@	
+     
+# generate tests
+test.pass.txt: tests.csv
+	awk -F, '$$3 == "pass" {print $$1 ":" $$2}' $^ | sort -u > $@
+check: chamalal.generator.disam.hfst test.pass.txt
+	bash compare.sh $< test.pass.txt
+
 # remove all hfst files
 clean:
-	rm *.hfst
+	rm *.hfst *.res *.mchar *.txt

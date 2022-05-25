@@ -18,11 +18,12 @@ PATTERN NumberTen
 Ten [<num>:] TeenLinker
 
 PATTERN CompositeNumbers
-((Atoms|Ninety) [<num>:] ((Crowns Card?) | (Linker NumClass) | (Hundreds Card?) | (Hundreds HndrLinker NumClass)))[vgakv,-gig]
-(Atoms [<num>:] Crowns Card?|Linker)[gig,-vgakv]
+(Atoms [<num>:] ((Crowns Card?) | ([<crowns>:] Linker NumClass) | (Hundreds Card?) | (Hundreds HndrLinker NumClass)))[vgakv,-gig]
+(Atoms [<num>:] (Crowns Card?) | (Crowns Linker NumClass))[gig,-vgakv]
 
 PATTERN NumberNinety
-(Ninety [<num>:] NinetyCrowns Card?)[vgakv,-gig]
+(Ninety [<num>:] Card?)[vgakv,-gig]
+(Ninety [<num>:] HndrLinker NumClass)[vgakv,-gig]
 
 PATTERN NumberOneHundred
 (OneHundred [<num>:] (Card?) | (HndrLinker NumClass))[^[vgakv,gig]]
@@ -70,7 +71,7 @@ LEXICON Ten
 гьазза[gig] # 10 
 
 LEXICON Ninety
-ачI[vgakv] # 9
+ачIу{н}[vgakv] # 9
 
 LEXICON OneHundred
 бегьа{н}[vgakv] # 100
@@ -86,7 +87,7 @@ LEXICON TeenLinker
 LEXICON Linker
 <linker>:{А}чIекI
 
-LEXICON HndrLinker
+LEXICON HndrLinker # it's the same linker morpheme. we made a dublicate, because twol does not support two {}-letters in a row
 <linker>:чIекI
 
 
@@ -102,19 +103,17 @@ LEXICON OneClass
 <3-5cl><pl>:р[gig]
 
 LEXICON NumClass
-<1cl>:у
-<2cl>:ви
-<3cl>:уб
-<4cl>:ул
-<5cl>:ви
+<1cl>:у[vgakv]
+<2cl>:ви[vgakv]
+<3cl>:уб[vgakv]
+<4cl>:ул[vgakv]
+<5cl>:ви[vgakv]
+<1-5cl>:у[gig]
 
 
 LEXICON Crowns
 <crowns>:ацIа[vgakv]
 <crowns>:аз[gig]
-
-LEXICON NinetyCrowns
-<crowns>:ун[vgakv]
 
 LEXICON Hundreds
 <hndr>:{а}бегьа{н}[vgakv]
