@@ -10,7 +10,7 @@ analysis,form,mustpass,source,page,description
 ачIу{н}<num><card>,atʃʼunda,ignore,Bokarev,72,NumberNinety with wrong (Gigatlian) variation of Card
 ачIу{н}<num><linker><3cl>,atʃʼuⁿtʃʼekʼub,pass,Bokarev,72,NumberNinety with Linker and NumClass
 бегьа{н}<num>,behan,pass,Bokarev,72,NumberOneHundred without Card
-бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred Upper-Gakvarian variation
+бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred - Upper-Gakvarian variation
 бегьа{н}<num><card>,behanda,ignore,Bokarev,72,NumberOneHundred wtih wrong (Gigatlian) variation of Card
 бешан<num><card>,beʃanda,pass,Bokarev,72,NumberOneHundred Gigatlian variation
 бегьа{н}<num><linker><4cl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
@@ -25,4 +25,9 @@ analysis,form,mustpass,source,page,description
 бо{в}<num><hndr>,boːbehan,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 400 without Card
 акь{в}<num><hndr><card>,atɬʼbehanna,pass,Bokarev,73,CompositeNumbers - Upper-Gakvarian 700
 ечI<num><hndr><linker><4cl>,etʃʼbehaⁿtʃʼekʼul,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 200 without Linker and NumClass
+зин<noun><sg><nom>,zin,pass,Bokarev,37,NomSg
+зин<noun><sg><erg>,zinad,pass,Bokarev,37,GenGroupCasesSg - Ergative
+зин<noun><sg><aff>,zinaxe,pass,Bokarev,37,DatGroupCasesSg - Affective
+зин<noun><pl><nom>,zine,pass,Bokarev,41,NomPl
+зин<noun><pl><dat>,zineɬa,pass,Bokarev,41,OblPl
 
