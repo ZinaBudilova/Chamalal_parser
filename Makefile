@@ -1,27 +1,29 @@
-.DEFAULT_GOAL := chamalal.analyzer.disam.hfst
+.DEFAULT_GOAL := cji.analyzer.disam.hfst
 
 # generate num analyzer and generator
 num.analyzer.hfst: num.generator.hfst
 	hfst-invert $< -o $@
-num.generator.hfst: num.lexd.hfst chamalal.twol.hfst
+num.generator.hfst: num.lexd.hfst cji.twol.hfst
 	hfst-compose-intersect $^ -o $@
-num.lexd.hfst: chamalal.num.lexd
+num.lexd.hfst: cji.num.lexd
 	lexd $< | hfst-txt2fst -o $@
-chamalal.twol.hfst: chamalal.twol
+cji.twol.hfst: cji.twol
 	hfst-twolc $< -o $@
-chamalal.morphotactics.twol.hfst: chamalal.morphotactics.twol
+cji.morphotactics.twol.hfst: cji.morphotactics.twol
 	hfst-twolc $< -o $@
 	
 # generate noun analyzer and generator
 noun.analyzer.hfst: noun.generator.hfst
 	hfst-invert $< -o $@
-noun.generator.hfst: noun.lexd.hfst chamalal.twol.hfst
+noun.generator.hfst: noun.lexd.hfst cji.twol.hfst
 	hfst-compose-intersect $^ -o $@
-noun.lexd.hfst: chamalal.noun.lexd
+noun.lexd.hfst: cji.noun.lexd
 	lexd $< | hfst-txt2fst -o $@
 
-# unite pos generators	
-chamalal.generator.hfst: noun.generator.hfst num.generator.hfst
+# unite pos generators	and analyzers
+cji.generator.hfst: noun.generator.hfst num.generator.hfst
+	hfst-disjunct $^ -o $@
+cji.analyzer.hfst: noun.analyzer.hfst num.analyzer.hfst
 	hfst-disjunct $^ -o $@
 	
 # generate transliterators
@@ -33,19 +35,19 @@ correspondence.hfst: correspondence
 	hfst-strings2fst -j correspondence -o $@
 
 # generate analyzer and generator for transcription
-chamalal.analyzer.disam.hfst: chamalal.generator.disam.hfst
+cji.analyzer.disam.hfst: cji.generator.disam.hfst
 	hfst-invert $< -o $@
-chamalal.generator.disam.hfst: chamalal.generator.tr.hfst tr.regexp.hfst
+cji.generator.disam.hfst: cji.generator.tr.hfst tr.regexp.hfst
 	hfst-compose -F -1 $< -2 $(word 2,$^) -o $@
 tr.regexp.hfst: transliterator.regexp
 	hfst-regexp2fst -o $@ < $<
-chamalal.generator.tr.hfst: chamalal.generator.hfst cy2la.transliterator.hfst
+cji.generator.tr.hfst: cji.generator.hfst cy2la.transliterator.hfst
 	hfst-compose $^ -o $@	
      
 # generate tests
 test.pass.txt: tests.csv
 	awk -F, '$$3 == "pass" {print $$1 ":" $$2}' $^ | sort -u > $@
-check: chamalal.generator.disam.hfst test.pass.txt
+check: cji.generator.disam.hfst test.pass.txt
 	bash compare.sh $< test.pass.txt
 
 # remove all hfst files
