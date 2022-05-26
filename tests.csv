@@ -18,13 +18,13 @@ analysis,form,mustpass,source,page,description
 азал<num>,azal,pass,Bokarev,73,NumberOneThousand without Card
 азал<num><card>,azalda,pass,Bokarev,73,NumberOneThousand
 азал<num><linker><5cl>,azaltʃʼekʼʷi,pass,Bokarev,73,NumberOneThousand with Linker and NumClass
-бо{в}<num><crowns>,bowatsʼa,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 40 without Card
-акь{в}<num><crowns><card>,atɬʼwatsʼada,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 70
+бо{ва1}<num><crowns>,bowatsʼa,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 40 without Card
+акь{ва2}<num><crowns><card>,atɬʼwatsʼada,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 70
 гьакь<num><crowns><linker><1-5cl>,hatɬʼazatʃʼekʼu,pass,Bokarev,72,CompositeNumbers - Gigatilan 70 with Linker and NumClass
-бекь<num><crowns><linker><2cl>,betɬʼatʃʼekʼʷi,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 80 with Linker and NumClass
-бо{в}<num><hndr>,boːbehan,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 400 without Card
-акь{в}<num><hndr><card>,atɬʼbehanna,pass,Bokarev,73,CompositeNumbers - Upper-Gakvarian 700
-ечI<num><hndr><linker><4cl>,etʃʼbehaⁿtʃʼekʼul,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 200 without Linker and NumClass
+бекь{а}<num><crowns><linker><2cl>,betɬʼatʃʼekʼʷi,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 80 with Linker and NumClass
+бо{ва1}<num><hndr>,boːbehan,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 400 without Card
+акь{ва2}<num><hndr><card>,atɬʼbehanna,pass,Bokarev,73,CompositeNumbers - Upper-Gakvarian 700
+ечI{е}<num><hndr><linker><4cl>,etʃʼbehaⁿtʃʼekʼul,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 200 without Linker and NumClass
 зин<noun><sg><nom>,zin,pass,Bokarev,37,NomSg
 зин<noun><sg><erg>,zinad,pass,Bokarev,37,GenGroupCasesSg - Ergative
 зин<noun><sg><aff>,zinaxe,pass,Bokarev,37,DatGroupCasesSg - Affective

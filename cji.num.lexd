@@ -5,6 +5,7 @@ NumberTen
 CompositeNumbers
 NumberNinety
 NumberOneHundred
+NumberNineHundred
 NumberOneThousand
 
 
@@ -18,18 +19,21 @@ PATTERN NumberTen
 Ten [<num>:] TeenLinker
 
 PATTERN CompositeNumbers
-(Atoms [<num>:] ((Crowns Card?) | ([<crowns>:] Linker NumClass) | (Hundreds Card?) | (Hundreds HndrLinker NumClass)))[vgakv,-gig]
+(Atoms [<num>:] ((Crowns Card?) | ([<crowns>:] Linker NumClass) | (Hundreds Card?) | (Hundreds Linker NumClass)))[vgakv,-gig]
 (Atoms [<num>:] (Crowns Card?) | (Crowns Linker NumClass))[gig,-vgakv]
 
 PATTERN NumberNinety
 (Ninety [<num>:] Card?)[vgakv,-gig]
-(Ninety [<num>:] HndrLinker NumClass)[vgakv,-gig]
+(Ninety [<num>:] Linker NumClass)[vgakv,-gig]
 
 PATTERN NumberOneHundred
-(OneHundred [<num>:] (Card?) | (HndrLinker NumClass))[^[vgakv,gig]]
+(OneHundred [<num>:] (Card?) | (Linker NumClass))[^[vgakv,gig]]
+
+PATTERN NumberNineHundred
+(NineAtom [<num>:] ((Hundreds Card?) | (Hundreds Linker NumClass)))[vgakv,-gig]
 
 PATTERN NumberOneThousand
-(OneThousand [<num>:] (Card?) | (HndrLinker NumClass))[vgakv,-gig]
+(OneThousand [<num>:] (Card?) | (Linker NumClass))[vgakv,-gig]
 
 
 LEXICON One
@@ -46,25 +50,28 @@ LEXICON Digits
 ишту[gig] # 5 
 анлIи # 6
 акьу[vgakv] # 7
-гакьу[gig] # 7 
+гьакьу[gig] # 7 
 бекьи # 8
 ачIа[vgakv] # 9
 гачIа[gig] # 9
 
 LEXICON Atoms
-ечI[vgakv] # 2
+ечI{е}[vgakv] # 2
 чIаъ[gig] # 2
-лъалъ[vgakv] # 3
+лъалъ{А}[vgakv] # 3
 лъаб[gig] # 3
-бо{в}[vgakv] # 4
+бо{ва1}[vgakv] # 4
 боъ[gig] # 4
-и2ссв[vgakv] # 5
+и2ссв{а}[vgakv] # 5
 ишт[gig] # 5
-анлI # 6
-акь{в}[vgakv] # 7
+анлI{а} # 6
+акь{ва2}[vgakv] # 7
 гьакь[gig] # 7
-бекь # 8
+бекь{а} # 8
 гьачI[gig] # 9
+
+LEXICON NineAtom
+ачIа[vgakv] # 9
 
 LEXICON Ten
 ацIа[vgakv] # 10
@@ -85,9 +92,6 @@ LEXICON TeenLinker
 <teen_linker>:л
 
 LEXICON Linker
-<linker>:{А}чIекI
-
-LEXICON HndrLinker # it's the same linker morpheme. we made a dublicate, because twol does not support two {}-letters in a row
 <linker>:чIекI
 
 
@@ -113,10 +117,10 @@ LEXICON NumClass
 
 LEXICON Crowns
 <crowns>:ацIа[vgakv]
-<crowns>:аз[gig]
+<crowns>:аз{а}[gig]
 
 LEXICON Hundreds
-<hndr>:{а}бегьа{н}[vgakv]
+<hndr>:бегьа{н}[vgakv]
 
 
 LEXICON Card
