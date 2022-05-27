@@ -16,7 +16,7 @@ You can cite the paper draft using one of the forms listed below:
 
 ## Sources
 
-### Grammar
+### Grammar and lexicon
 
 The current work is based on the linguistic description of Bagvalal by A. A. Bokarev (1949), the Chamalal dictionary by P. T. Magomedova (1999), and K. Roncero's Chamalal database from [Endangered Languages Archive](https://www.elararchive.org/uncategorized/SO_c77e6dce-1681-4ef5-8827-e6c3a126cc42/) (2020).
 
