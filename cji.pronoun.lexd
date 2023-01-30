@@ -1,0 +1,74 @@
+PATTERNS
+PronounNom
+PronounErg
+PronounDatGroupCases
+PronounGenGroupCases
+
+
+PATTERN PronounNom
+PronounNomForm [<pronoun><nom>:]
+
+PATTERN PronounErg
+PronounErgForm [<pronoun><erg>:]
+
+PATTERN PronounGenGroupCases
+(PronounGenStem [<pronoun><gen>:] (ClassSuffixes | GenGroupCases))[^[sg,pl]]
+
+PATTERN PronounDatGroupCases
+(PronounDatStem [<pronoun>:] DatGroupCases)[^[sg,pl]]
+
+
+LEXICON PronounNomForm
+<1sg>:дии2
+<2sg>:мии2
+<1pl.excl>:исси
+<1pl.incl>:илIи
+<2pl>:бити
+
+LEXICON PronounErgForm
+<1sg>:дее
+<2sg>:минн
+<1pl.excl>:исси
+<1pl.incl>:илIи
+<2pl>:бити
+
+LEXICON PronounDatStem
+<1sg>:ди[sg]
+<2sg>:ду[sg]
+<1pl.excl>:исс[pl]
+<1pl.incl>:илI[pl]
+<2pl>:бит[pl]
+
+LEXICON PronounGenStem
+<1sg>:ди[sg]
+<2sg>:ду[sg]
+<1pl.excl>:исси[pl]
+<1pl.incl>:илIи[pl]
+<2pl>:бит[pl]
+
+LEXICON ClassSuffixes
+<gen><1cl.sg>:в
+<gen><2cl.sg>:й[sg]
+<gen><2cl.sg>:[pl]
+<gen><1-2cl.pl>:бе
+<gen><3cl.sg>:б
+<gen><4cl.sg>:л
+<gen><5cl.sg>:й
+<gen><3-5cl.pl>:йе
+
+LEXICON DatGroupCases
+<dat>:лъа
+<aff>:хе
+<super.lat>:йоол[sg]
+<super.lat>:оол[pl]
+<apud.lat>:хе
+<apud.lat>:хал
+
+LEXICON GenGroupCases
+<super.ess>:чI
+<super.el>:чIоо
+<inter.ess>:лIа2
+<inter.lat>:лIи
+<inter.lat>:лIал
+<cont.ess>:хъ
+
