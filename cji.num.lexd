@@ -96,23 +96,23 @@ LEXICON Linker
 
 
 LEXICON OneClass
-<1cl><sg>:в
-<2cl><sg>:[vgakv]
-<2cl><sg>:й[gig]
-<1-2cl><pl>:би
-<3cl><sg>:б
-<4cl><sg>:л
-<5cl><sg>:
-<3-5cl><pl>:е[vgakv]
-<3-5cl><pl>:р[gig]
+<m.sg>:в
+<f.sg>:[vgakv]
+<f.sg>:й[gig]
+<h.pl>:би
+<nonh1.sg>:б
+<nonh2.sg>:л
+<nonh3.sg>:
+<nh.pl>:е[vgakv]
+<nh.pl>:р[gig]
 
 LEXICON NumClass
-<1cl>:у[vgakv]
-<2cl>:ви[vgakv]
-<3cl>:уб[vgakv]
-<4cl>:ул[vgakv]
-<5cl>:ви[vgakv]
-<1-5cl>:у[gig]
+<m.pl>:у[vgakv]
+<f.pl>:ви[vgakv]
+<nonh1.pl>:уб[vgakv]
+<nonh2.pl>:ул[vgakv]
+<nonh3.pl>:ви[vgakv]
+<pl>:у[gig]
 
 
 LEXICON Crowns

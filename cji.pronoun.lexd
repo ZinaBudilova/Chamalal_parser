@@ -47,14 +47,14 @@ LEXICON PronounGenStem
 <2pl>:бит[pl]
 
 LEXICON ClassSuffixes
-<gen><1cl.sg>:в
-<gen><2cl.sg>:й[sg]
-<gen><2cl.sg>:[pl]
-<gen><1-2cl.pl>:бе
-<gen><3cl.sg>:б
-<gen><4cl.sg>:л
-<gen><5cl.sg>:й
-<gen><3-5cl.pl>:йе
+<gen><m.sg>:в
+<gen><f.sg>:й[sg]
+<gen><f.sg>:[pl]
+<gen><h.pl>:бе
+<gen><nonh1.sg>:б
+<gen><nonh2.sg>:л
+<gen><nonh3.sg>:й
+<gen><nh.pl>:йе
 
 LEXICON DatGroupCases
 <dat>:лъа

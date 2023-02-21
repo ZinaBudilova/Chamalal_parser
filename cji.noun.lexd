@@ -24,7 +24,7 @@ OblPlStem [<noun><pl>:] DatGroupCases|GenGroupCases
 
 LEXICON DatGroupCases
 <dat>:лъа
-<aff>:хе[gig] #affective case exists only in Gigatlian dialect
+<aff>:хе[gig] # affective case exists only in Gigatlian dialect
 <apud.ess>:хе[vgakv] # III in Magomedova, II in Bokarev
 <apud.el>:хоо[vgakv]
 <apud.lat>:хе[vgakv]
