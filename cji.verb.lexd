@@ -1,0 +1,77 @@
+PATTERNS
+VerbsWithPrefix
+VerbsNoPrefix
+
+PATTERN VerbsWithPrefix
+(ClassPrefixes (InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[-no_pref])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+
+PATTERN VerbsNoPrefix
+(InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[no_pref]
+
+LEXICON ClassPrefixes
+<m.sg>:ва[a-pref]  # Bokarev's 1st group
+<f.sg>:йа[a-pref]
+<h.pl>:ба[a-pref]
+<nonh1.sg>:ба[a-pref]
+<nonh2.sg>:йа[a-pref]
+<nonh3.sg>:йа[a-pref]
+<nh.pl>:йа[a-pref]
+<m.sg>:ве[e-pref]  # Bokarev's 2nd group
+<f.sg>:йе[e-pref]
+<h.pl>:бе[e-pref]
+<nonh1.sg>:бе[e-pref]
+<nonh2.sg>:йе[e-pref]
+<nonh3.sg>:йе[e-pref]
+<nh.pl>:йе[e-pref]
+<m.sg>:ви[ia-pref]  # Bokarev's 3rd group
+<f.sg>:йи[ia-pref]
+<h.pl>:ба[ia-pref]
+<nonh1.sg>:би[ia-pref]
+<nonh2.sg>:йи[ia-pref]
+<nonh3.sg>:йи[ia-pref]
+<nh.pl>:йа[ia-pref]
+<m.sg>:ви[i-pref]  # Bokarev's 4th group
+<f.sg>:йи[i-pref]
+<h.pl>:би[i-pref]
+<nonh1.sg>:би[i-pref]
+<nonh2.sg>:йи[i-pref]
+<nonh3.sg>:йи[i-pref]
+<nh.pl>:йи[i-pref]
+<m.sg>:ви[n-pref]  # Bokarev's 5th group
+<f.sg>:ни[n-pref]
+<h.pl>:би[n-pref]
+<nonh1.sg>:ба[n-pref]
+<nonh2.sg>:ни[n-pref]
+<nonh3.sg>:ди[n-pref]
+<nh.pl>:да[n-pref]
+<m.sg>:ву[u-pref]  # Bokarev's 6th group
+<f.sg>:йи[u-pref]
+<h.pl>:ба[u-pref]
+<nonh1.sg>:бу[u-pref]
+<nonh2.sg>:йи[u-pref]
+<nonh3.sg>:ву[u-pref]
+<nh.pl>:йа[u-pref]
+
+LEXICON InfStem
+<verb><inf>:ахъла[no_pref]  # молоть
+<verb><inf>:бахла[a-pref]  # броситься
+
+LEXICON PastStem
+<verb><pst>:ахъ[no_pref]  # молоть
+<verb><pst>:баха[a-pref]  # броситься
+
+LEXICON FutStem
+<verb><fut>:ахъида[no_pref]  # молоть
+<verb><fut>:бахида[a-pref]  # броситься
+
+LEXICON ImperativStem
+<verb><impv>:ахъа[no_pref]  # молоть
+<verb><impv>:бахабе[a-pref]  # броситься
+
+LEXICON ConverbPastStem
+<cvb><pst>:ахъи[no_pref]  # молоть
+<cvb><pst>:баха[a-pref]  # броситься
+
+LEXICON ConverbPresentStem
+<cvb><prs>:ахъидахъ[no_pref]  # молоть
+<cvb><prs>:бахидахъ[a-pref]  # броситься
