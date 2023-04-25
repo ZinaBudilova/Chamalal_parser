@@ -1,22 +1,20 @@
-PATTERNS
-AdjNoPrefix
-AdjWithPrefix
+PATTERN Adj
 
-PATTERN AdjNoPrefix
-(AdjStems[no_pref] [<adj>:] ClassSuffixes)[^[u-suff,oo-suff,o-suff]] 
+# without class prefix
+(AdjStem[no_pref] [<adj>:] AdjClassSuffix)[^[u-suff,oo-suff,o-suff]] 
 
-PATTERN AdjWithPrefix
-(ClassPrefixes[m_sg] AdjStems[-no_pref] [<adj>:] ClassSuffixes[m_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[f_sg] AdjStems[-no_pref] [<adj>:] ClassSuffixes[f_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[h_pl] AdjStems[-no_pref] [<adj>:] ClassSuffixes[h_pl])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[nonh1_sg] AdjStems[-no_pref] [<adj>:] ClassSuffixes[nonh1_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[nonh2_sg] AdjStems[-no_pref] [<adj>:] ClassSuffixes[nonh2_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[nonh3_sg] AdjStems[-no_pref] [<adj>:] ClassSuffixes[nonh3_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
-(ClassPrefixes[nh_pl] AdjStems[-no_pref] [<adj>:] ClassSuffixes[nh_pl])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+# with class prefix
+(AdjClassPrefix[m_sg] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[m_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[f_sg] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[f_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[h_pl] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[h_pl])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[nonh1_sg] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[nonh1_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[nonh2_sg] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[nonh2_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[nonh3_sg] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[nonh3_sg])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
+(AdjClassPrefix[nh_pl] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[nh_pl])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
 
 
 
-LEXICON ClassSuffixes
+LEXICON AdjClassSuffix
 <m.sg>:у[u-suff,m_sg]
 <f.sg>:и[u-suff,f_sg]
 <h.pl>:убе[u-suff,h_pl]
@@ -39,7 +37,7 @@ LEXICON ClassSuffixes
 <nonh3.sg>:е[o-suff,nonh3_sg]
 <nh.pl>:ейе[o-suff,nh_pl]
 
-LEXICON ClassPrefixes
+LEXICON AdjClassPrefix
 <m.sg>:ва[a-pref,m_sg]
 <f.sg>:йа[a-pref,f_sg]
 <h.pl>:ба[a-pref,h_pl]
@@ -62,7 +60,7 @@ LEXICON ClassPrefixes
 <nonh3.sg>:йи[i-pref,nonh3_sg]
 <nh.pl>:йа[i-pref,nh_pl]
 
-LEXICON AdjStems
+LEXICON AdjStem
 ар{в}[no_pref,u-suff]
 гьоо[no_pref,oo-suff]
 берцн[no_pref,o-suff]

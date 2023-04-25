@@ -1,14 +1,13 @@
-PATTERNS
-VerbsWithPrefix
-VerbsNoPrefix
+PATTERN Verb
 
-PATTERN VerbsWithPrefix
-(ClassPrefixes (InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[-no_pref])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+# With prefix
+(VerbClassPrefixes (InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[-no_pref])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 
-PATTERN VerbsNoPrefix
+# Without prefix
 (InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[no_pref]
 
-LEXICON ClassPrefixes
+
+LEXICON VerbClassPrefixes
 <m.sg>:ва[a-pref]  # Bokarev's 1st group
 <f.sg>:йа[a-pref]
 <h.pl>:ба[a-pref]

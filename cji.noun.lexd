@@ -1,28 +1,22 @@
-PATTERNS
-NomSg
-NomPl
-DatGroupCasesSg
-GenGroupCasesSg
-OblPl
+PATTERN Noun
+
+# Nom Sg
+NounNomSgForm [<noun><sg><nom>:]
+
+# Nom Pl
+NounNomPlForm [<noun><pl><nom>:]
+
+# Dative-like Sg
+NounDatSgStem [<noun><sg>:] NounDatLikeCase
+
+# Genitive-like Sg
+NounOblSgStem [<noun><sg>:] NounGenLikeCase
+
+# Not-nominative Pl
+NounOblPlStem [<noun><pl>:] NounDatLikeCase|NounGenLikeCase
 
 
-PATTERN NomSg
-NomSgForm [<noun><sg><nom>:]
-
-PATTERN NomPl
-NomPlForm [<noun><pl><nom>:]
-
-PATTERN DatGroupCasesSg
-DatSgStem [<noun><sg>:] DatGroupCases
-
-PATTERN GenGroupCasesSg
-OblSgStem [<noun><sg>:] GenGroupCases
-
-PATTERN OblPl
-OblPlStem [<noun><pl>:] DatGroupCases|GenGroupCases
-
-
-LEXICON DatGroupCases
+LEXICON NounDatLikeCase
 <dat>:лъа
 <aff>:хе[gig] # affective case exists only in Gigatlian dialect
 <apud.ess>:хе[vgakv] # III in Magomedova, II in Bokarev
@@ -34,7 +28,7 @@ LEXICON DatGroupCases
 <in.lat>:и[vgakv]
 <in.lat>:ал[vgakv]
 
-LEXICON GenGroupCases
+LEXICON NounGenLikeCase
 <erg>:д
 <gen>:лI
 <gen>:лIе # according to Bokarev
@@ -77,7 +71,7 @@ LEXICON GenGroupCases
 <sub.el>:кьур[gig]
 <sub.lat>:кьу[gig]
 
-LEXICON NomSgForm
+LEXICON NounNomSgForm
 а[3]
 а2з[4]
 а2з[5]
@@ -608,7 +602,7 @@ LEXICON NomSgForm
 ээ[3]
 
 
-LEXICON NomPlForm
+LEXICON NounNomPlForm
 а[3]:аавбе
 а2з[4]:а2забе
 а2з[5]:а2збе
@@ -1108,7 +1102,7 @@ LEXICON NomPlForm
 ээ[3]:ээбе
 
 
-LEXICON OblSgStem
+LEXICON NounOblSgStem
 а[3]:ав
 а2з[4]:а2зи
 а2з[5]:а2зи
@@ -1641,7 +1635,7 @@ LEXICON OblSgStem
 эъа[3]:эъи
 ээ[3]:ээ
 
-LEXICON DatSgStem
+LEXICON NounDatSgStem
 а[3]:ав # without any changes
 а2з[4]:а2зи
 а2з[5]:а2зи
@@ -2632,7 +2626,7 @@ LEXICON DatSgStem
 чӏута[3]:чӏут
 элмитӏв[3]:элмитӏ
 
-LEXICON OblPlStem
+LEXICON NounOblPlStem
 а[3]:аавбе #without any changes
 а2з[4]:а2забе
 а2з[5]:а2збе

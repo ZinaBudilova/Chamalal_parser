@@ -1,38 +1,27 @@
-PATTERNS
-NumberOne
-NumbersUpToTen
-NumberTen
-CompositeNumbers
-NumberNinety
-NumberOneHundred
-NumberNineHundred
-NumberOneThousand
+PATTERN Num
 
-
-PATTERN NumberOne
+# Number 1
 One [<num>:] OneClass
 
-PATTERN NumbersUpToTen
+# Numbers 2 - 10
 ((Digits) | (Ten) [<num>:] Card?)[^[vgakv,gig]]
-
-PATTERN NumberTen
 Ten [<num>:] TeenLinker
 
-PATTERN CompositeNumbers
+# All composite numbers
 (Atoms [<num>:] ((Crowns Card?) | ([<crowns>:] Linker NumClass) | (Hundreds Card?) | (Hundreds Linker NumClass)))[vgakv,-gig]
 (Atoms [<num>:] (Crowns Card?) | (Crowns Linker NumClass))[gig,-vgakv]
 
-PATTERN NumberNinety
+# Number 90
 (Ninety [<num>:] Card?)[vgakv,-gig]
 (Ninety [<num>:] Linker NumClass)[vgakv,-gig]
 
-PATTERN NumberOneHundred
+# Number 100
 (OneHundred [<num>:] (Card?) | (Linker NumClass))[^[vgakv,gig]]
 
-PATTERN NumberNineHundred
+# Number 900
 (NineAtom [<num>:] ((Hundreds Card?) | (Hundreds Linker NumClass)))[vgakv,-gig]
 
-PATTERN NumberOneThousand
+# Number 1000
 (OneThousand [<num>:] (Card?) | (Linker NumClass))[vgakv,-gig]
 
 
@@ -87,13 +76,11 @@ LEXICON OneHundred
 LEXICON OneThousand
 азал # 1000
 
-
 LEXICON TeenLinker
 <teen_linker>:л
 
 LEXICON Linker
 <linker>:чIекI
-
 
 LEXICON OneClass
 <m.sg>:в
@@ -114,14 +101,12 @@ LEXICON NumClass
 <nonh3.pl>:ви[vgakv]
 <pl>:у[gig]
 
-
 LEXICON Crowns
 <crowns>:ацIа[vgakv]
 <crowns>:аз{а}[gig]
 
 LEXICON Hundreds
 <hndr>:бегьа{н}[vgakv]
-
 
 LEXICON Card
 <card>:{д}а[vgakv]

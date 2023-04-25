@@ -1,21 +1,16 @@
-PATTERNS
-PronounNom
-PronounErg
-PronounDatGroupCases
-PronounGenGroupCases
+PATTERN Pronoun
 
-
-PATTERN PronounNom
+# Nom
 PronounNomForm [<pronoun><nom>:]
 
-PATTERN PronounErg
+# Erg
 PronounErgForm [<pronoun><erg>:]
 
-PATTERN PronounGenGroupCases
-(PronounGenStem [<pronoun><gen>:] (ClassSuffixes | GenGroupCases))[^[sg,pl]]
+# Genitive-like
+(PronounGenStem [<pronoun><gen>:] (PronounClassSuffixes | PronounGenGroupCases))[^[sg,pl]]
 
-PATTERN PronounDatGroupCases
-(PronounDatStem [<pronoun>:] DatGroupCases)[^[sg,pl]]
+# Dative-like
+(PronounDatStem [<pronoun>:] PronounDatGroupCases)[^[sg,pl]]
 
 
 LEXICON PronounNomForm
@@ -46,7 +41,7 @@ LEXICON PronounGenStem
 <1pl.incl>:илIи[pl]
 <2pl>:бит[pl]
 
-LEXICON ClassSuffixes
+LEXICON PronounClassSuffixes
 <gen><m.sg>:в
 <gen><f.sg>:й[sg]
 <gen><f.sg>:[pl]
@@ -56,7 +51,7 @@ LEXICON ClassSuffixes
 <gen><nonh3.sg>:й
 <gen><nh.pl>:йе
 
-LEXICON DatGroupCases
+LEXICON PronounDatLikeCases
 <dat>:лъа
 <aff>:хе
 <super.lat>:йоол[sg]
@@ -64,7 +59,7 @@ LEXICON DatGroupCases
 <apud.lat>:хе
 <apud.lat>:хал
 
-LEXICON GenGroupCases
+LEXICON PronounGenLikeCases
 <super.ess>:чI
 <super.el>:чIоо
 <inter.ess>:лIа2
