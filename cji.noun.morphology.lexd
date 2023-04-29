@@ -1,0 +1,73 @@
+PATTERNS
+
+# Nom Sg
+NounNomSgForm [<noun><sg><nom>:]
+
+# Nom Pl
+NounNomPlForm [<noun><pl><nom>:]
+
+# Genitive-like Sg
+NounGenSgStem [<noun><sg>:] NounGenLikeCase
+
+# Dative-like Sg
+NounGenSgStem|NounGeneratedDatSgStem [<noun><sg>:] NounDatLikeCase
+
+# Not-nominative Pl
+NounNomPlForm|NounGeneratedOblPlStem [<noun><pl>:] NounDatLikeCase|NounGenLikeCase
+
+
+LEXICON NounDatLikeCase
+<dat>:лъа
+<aff>:хе[gig] # affective case exists only in Gigatlian dialect
+<apud.ess>:хе[vgakv] # III in Magomedova, II in Bokarev
+<apud.el>:хоо[vgakv]
+<apud.lat>:хе[vgakv]
+<apud.lat>:хал[vgakv]
+<in.ess>:а2[vgakv] # V in Magomedova, III in Bokarev
+<in.el>:аноо[vgakv]
+<in.lat>:и[vgakv]
+<in.lat>:ал[vgakv]
+
+LEXICON NounGenLikeCase
+<erg>:д
+<gen>:лI
+<gen>:лIе # according to Bokarev
+<gen>:лIи # according to Magomedova
+<super.ess>:чI[vgakv] # I in Magomedova and in Bokarev
+<super.el>:чIоо[vgakv]
+<super.lat>:оол[vgakv]
+<super.lat>:оо[vgakv]
+<cont.ess>:хъ[vgakv] # II in Magomedova and in Bokarev
+<cont.ess>:хъе[vgakv]
+<cont.el>:хъоо[vgakv]
+<cont.lat>:хъе[vgakv]
+<cont.lat>:хъал[vgakv]
+<inter.ess>:лIа2[vgakv] # IV in Magomedova, III in Bokarev
+<inter.el>:лIаноо[vgakv]
+<inter.lat>:лIи[vgakv]
+<inter.lat>:лIал[vgakv]
+<sub.ess>:кьа2[vgakv] # VI in Magomedova, IV in Bokarev
+<sub.el>:кьаноо[vgakv]
+<sub.lat>:кьи[vgakv]
+<sub.lat>:кьал[vgakv]
+<loc.ess>:ла[gig] # I in Magomedova
+<loc.el>:лур[gig]
+<loc.lat>:ла[gig]
+<super.ess>:чIу[gig] # II in Magomedova
+<super.el>:чIур[gig]
+<super.lat>:чIу[gig]
+<cont.ess>:хъи[gig] # III in Magomedova
+<cont.lat>:хъу[gig]
+<apud.ess>:хи[gig] # IV in Magomedova
+<apud.el>:хур[gig]
+<apud.lat>:ху[gig]
+<inter.ess>:лIи[gig] # V in Magomedova
+<inter.el>:лIур[gig]
+<inter.lat>:лIу[gig]
+<in.ess>:ни[gig] # VI in Magomedova
+<in.el>:нур[gig]
+<in.lat>:ну[gig]
+<sub.ess>:кьи[gig] # VII in Magomedova
+<sub.el>:кьур[gig]
+<sub.lat>:кьу[gig]
+
