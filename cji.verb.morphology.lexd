@@ -1,10 +1,20 @@
-PATTERN Verb
+PATTERNS
 
-# With prefix
-(VerbClassPrefixes (InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[-no_pref])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+# without class prefix
+VerbInfStem[no_pref] [<verb><inf>:]
+VerbPstStem[no_pref] [<verb><pst>:]
+VerbFutStem[no_pref] [<verb><fut>:]
+VerbImpStem[no_pref] [<verb><imp>:]
+CvbPstStem[no_pref] [<cvb><pst>:]
+CvbPrsStem[no_pref] [<cvb><prs>:]
 
-# Without prefix
-(InfStem|PastStem|FutStem|ImperativStem|ConverbPastStem|ConverbPresentStem)[no_pref]
+# with class prefix
+(VerbClassPrefixes VerbInfStem[-no_pref] [<verb><inf>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbPstStem[-no_pref] [<verb><pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbFutStem[-no_pref] [<verb><fut>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbImpStem[-no_pref] [<verb><imp>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes CvbPstStem[-no_pref] [<cvb><pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes CvbPrsStem[-no_pref] [<cvb><prs>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 
 
 LEXICON VerbClassPrefixes
@@ -51,26 +61,3 @@ LEXICON VerbClassPrefixes
 <nonh3.sg>:ву[u-pref]
 <nh.pl>:йа[u-pref]
 
-LEXICON InfStem
-<verb><inf>:ахъла[no_pref]  # молоть
-<verb><inf>:бахла[a-pref]  # броситься
-
-LEXICON PastStem
-<verb><pst>:ахъ[no_pref]  # молоть
-<verb><pst>:баха[a-pref]  # броситься
-
-LEXICON FutStem
-<verb><fut>:ахъида[no_pref]  # молоть
-<verb><fut>:бахида[a-pref]  # броситься
-
-LEXICON ImperativStem
-<verb><impv>:ахъа[no_pref]  # молоть
-<verb><impv>:бахабе[a-pref]  # броситься
-
-LEXICON ConverbPastStem
-<cvb><pst>:ахъи[no_pref]  # молоть
-<cvb><pst>:баха[a-pref]  # броситься
-
-LEXICON ConverbPresentStem
-<cvb><prs>:ахъидахъ[no_pref]  # молоть
-<cvb><prs>:бахидахъ[a-pref]  # броситься

@@ -1,4 +1,4 @@
-PATTERN Pronoun
+PATTERNS
 
 # Nom
 PronounNomForm [<pronoun><nom>:]

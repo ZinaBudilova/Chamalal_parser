@@ -1,4 +1,4 @@
-PATTERN Num
+PATTERNS
 
 # Number 1
 One [<num>:] OneClass

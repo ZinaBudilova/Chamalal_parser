@@ -1,4 +1,4 @@
-PATTERN Adj
+PATTERNS
 
 # without class prefix
 (AdjStem[no_pref] [<adj>:] AdjClassSuffix)[^[u-suff,oo-suff,o-suff]] 
@@ -13,13 +13,12 @@ PATTERN Adj
 (AdjClassPrefix[nh_pl] AdjStem[-no_pref] [<adj>:] AdjClassSuffix[nh_pl])[^[a-pref,e-pref,i-pref],^[u-suff,oo-suff,o-suff]]
 
 
-
 LEXICON AdjClassSuffix
 <m.sg>:у[u-suff,m_sg]
 <f.sg>:и[u-suff,f_sg]
 <h.pl>:убе[u-suff,h_pl]
 <nonh1.sg>:уб[u-suff,nonh1_sg]
-<nonh2.sg>:{у}л[u-suff,nonh2_sg]
+<nonh2.sg>:ул[u-suff,nonh2_sg]
 <nonh3.sg>:и[u-suff,nonh3_sg]
 <nh.pl>:ийе[u-suff,nh_pl]
 <m.sg>:[oo-suff,m_sg]
@@ -59,18 +58,4 @@ LEXICON AdjClassPrefix
 <nonh2.sg>:йи[i-pref,nonh2_sg]
 <nonh3.sg>:йи[i-pref,nonh3_sg]
 <nh.pl>:йа[i-pref,nh_pl]
-
-LEXICON AdjStem
-ар{в}[no_pref,u-suff]
-гьоо[no_pref,oo-suff]
-берцн[no_pref,o-suff]
-шакI{в}[a-pref,u-suff]
-цIцIад[a-pref,o-suff]
-чIатI{в}[e-pref,u-suff]
-ххил[e-pref,o-suff]
-гь{в}[i-pref,u-suff]
-ц{в}[i-pref,u-suff]
-микI{и}[no_pref,u-suff]
-кван[no_pref,u-suff]
-кьван[no_pref,u-suff]
 
