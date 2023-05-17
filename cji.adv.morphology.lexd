@@ -1,0 +1,31 @@
+PATTERNS
+# without class prefix
+AdvStem[no_pref] [<adv>:]
+
+# with class prefix
+(AdvClassPrefix AdvStem[-no_pref] [<adv>:])[^[a-pref,e-pref,i-pref]]
+
+
+LEXICON AdvClassPrefix
+<m.sg>:ва[a-pref]
+<f.sg>:йа[a-pref]
+<h.pl>:ба[a-pref]
+<nonh1.sg>:ба[a-pref]
+<nonh2.sg>:йа[a-pref]
+<nonh3.sg>:йа[a-pref]
+<nh.pl>:йа[a-pref]
+<m.sg>:ве[e-pref]
+<f.sg>:йе[e-pref]
+<h.pl>:бе[e-pref]
+<nonh1.sg>:бе[e-pref]
+<nonh2.sg>:йе[e-pref]
+<nonh3.sg>:йе[e-pref]
+<nh.pl>:йе[e-pref]
+<m.sg>:ви[i-pref]
+<f.sg>:йи[i-pref]
+<h.pl>:ба[i-pref]
+<nonh1.sg>:би[i-pref]
+<nonh2.sg>:йи[i-pref]
+<nonh3.sg>:йи[i-pref]
+<nh.pl>:йа[i-pref]
+
