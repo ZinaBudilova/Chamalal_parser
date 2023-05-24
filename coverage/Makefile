@@ -1,4 +1,4 @@
-analyser=cji.an.hfstol
+analyser=cji.analyzer.hfstol
 .PHONY: check-coverage
 
 check-coverage-stats: corpus $(analyser) stats
