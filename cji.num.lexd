@@ -29,45 +29,45 @@ LEXICON One
 се # 1
 
 LEXICON Digits
-ечIи[vgakv] # 2  
-чIе[gig] # 2
+еч1и[vgakv] # 2  
+ч1е[gig] # 2
 лъалъа[vgakv] # 3
 лъабу[gig] # 3
 боъу[vgakv] # 4
 буъу[gig] # 4
 иссу[vgakv] # 5 
 ишту[gig] # 5 
-анлIи # 6
+анл1и # 6
 акьу[vgakv] # 7
 гьакьу[gig] # 7 
 бекьи # 8
-ачIа[vgakv] # 9
-гачIа[gig] # 9
+ач1а[vgakv] # 9
+гач1а[gig] # 9
 
 LEXICON Atoms
-ечI{е}[vgakv] # 2
-чIаъ[gig] # 2
+еч1{е}[vgakv] # 2
+ч1аъ[gig] # 2
 лъалъ{А}[vgakv] # 3
 лъаб[gig] # 3
 бо{ва1}[vgakv] # 4
 боъ[gig] # 4
 и2ссв{а}[vgakv] # 5
 ишт[gig] # 5
-анлI{а} # 6
+анл1{а} # 6
 акь{ва2}[vgakv] # 7
 гьакь[gig] # 7
 бекь{а} # 8
-гьачI[gig] # 9
+гьач1[gig] # 9
 
 LEXICON NineAtom
-ачIа[vgakv] # 9
+ач1а[vgakv] # 9
 
 LEXICON Ten
-ацIа[vgakv] # 10
+ац1а[vgakv] # 10
 гьазза[gig] # 10 
 
 LEXICON Ninety
-ачIу{н}[vgakv] # 9
+ач1у{н}[vgakv] # 9
 
 LEXICON OneHundred
 бегьа{н}[vgakv] # 100
@@ -80,7 +80,7 @@ LEXICON TeenLinker
 <teen_linker>:л
 
 LEXICON Linker
-<linker>:чIекI
+<linker>:ч1ек1
 
 LEXICON OneClass
 <m.sg>:в
@@ -102,7 +102,7 @@ LEXICON NumClass
 <pl>:у[gig]
 
 LEXICON Crowns
-<crowns>:ацIа[vgakv]
+<crowns>:ац1а[vgakv]
 <crowns>:аз{а}[gig]
 
 LEXICON Hundreds
