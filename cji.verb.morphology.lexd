@@ -16,6 +16,12 @@ CvbPrsStem[no_pref] [<cvb><prs>:]
 (VerbClassPrefixes CvbPstStem[-no_pref] [<cvb><pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 (VerbClassPrefixes CvbPrsStem[-no_pref] [<cvb><prs>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 
+# linker
+VerbLinker [<verb><prs>:]
+
+
+LEXICON VerbLinker
+ида  # is
 
 LEXICON VerbClassPrefixes
 <m.sg>:ва[a-pref]  # Bokarev's 1st group
