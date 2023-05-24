@@ -7,10 +7,10 @@ PronounNomForm [<pronoun><nom>:]
 PronounErgForm [<pronoun><erg>:]
 
 # Genitive-like
-(PronounGenStem [<pronoun><gen>:] (PronounClassSuffixes | PronounGenGroupCases))[^[sg,pl]]
+(PronounGenStem [<pronoun><gen>:] (PronounClassSuffixes | PronounGenLikeCases))[^[sg,pl]]
 
 # Dative-like
-(PronounDatStem [<pronoun>:] PronounDatGroupCases)[^[sg,pl]]
+(PronounDatStem [<pronoun>:] PronounDatLikeCases)[^[sg,pl]]
 
 
 LEXICON PronounNomForm
