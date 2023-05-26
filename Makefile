@@ -1,4 +1,4 @@
-.DEFAULT_GOAL := cji.analyzer.disam.hfst
+.DEFAULT_GOAL := cji.analyzer.hfst
 
 # join all lexd files
 cji.lexd: $(wildcard cji.*.lexd)
@@ -33,7 +33,11 @@ cji.generator.disam.hfst: cji.generator.tr.hfst tr.regexp.hfst
 tr.regexp.hfst: transliterator.regexp
 	hfst-regexp2fst -o $@ < $<
 cji.generator.tr.hfst: cji.generator.hfst cy2la.transliterator.hfst
-	hfst-compose $^ -o $@	
+	hfst-compose $^ -o $@
+	
+# hfstol for coverage testing
+hfstol: 
+	hfst-fst2fst -O -i cji.analyzer.hfst -o ./coverage/cji.analyzer.hfstol
 	
 # test generator
 test.pass.txt: tests.csv
