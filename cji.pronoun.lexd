@@ -14,14 +14,18 @@ PronounErgForm [<pronoun><erg>:]
 
 
 LEXICON PronounNomForm
-<1sg>:дии2
-<2sg>:мии2
+<1sg>:дии2  # Bokarev
+<1sg>:ди2  # Magomedova
+<2sg>:мии2  # Bokarev
+<2sg>:ми  # Magomedova
 <1pl.excl>:исси
 <1pl.incl>:илIи
 <2pl>:бити
+<3sg>:о  # он
 
 LEXICON PronounErgForm
-<1sg>:дее
+<1sg>:дее  # Bokarev
+<1sg>:де  # Magomedova
 <2sg>:минн
 <1pl.excl>:исси
 <1pl.incl>:илIи
@@ -40,6 +44,7 @@ LEXICON PronounGenStem
 <1pl.excl>:исси[pl]
 <1pl.incl>:илIи[pl]
 <2pl>:бит[pl]
+<3sg>:о[sg]  # этот
 
 LEXICON PronounClassSuffixes
 <gen><m.sg>:в
