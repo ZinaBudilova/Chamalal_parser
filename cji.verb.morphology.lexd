@@ -2,19 +2,30 @@ PATTERNS
 
 # without class prefix
 VerbInfStem[no_pref] [<verb><inf>:]
-VerbPstStem[no_pref] [<verb><pst>:]
-VerbFutStem[no_pref] [<verb><fut>:]
+VerbPstStem[no_pref] [<verb><pst>:] ([<neg>:елъ]? | [<neg>:е2лъ]? | [<proh>:хъала]? | [<cond>:аада]? | [<cond>:ада]?)
+VerbFutStem[no_pref] [<verb><fut>:] ([<neg>:ии]? | [<neg>:ии2]?)
 VerbImpStem[no_pref] [<verb><imp>:]
-CvbPstStem[no_pref] [<cvb><pst>:]
+CvbPstStem[no_pref] [<cvb><pst>:] ([<neg>:ида]? | [<neg>:инна]?)
 CvbPrsStem[no_pref] [<cvb><prs>:]
 
 # with class prefix
 (VerbClassPrefixes VerbInfStem[-no_pref] [<verb><inf>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
-(VerbClassPrefixes VerbPstStem[-no_pref] [<verb><pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
-(VerbClassPrefixes VerbFutStem[-no_pref] [<verb><fut>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbPstStem[-no_pref] [<verb><pst>:] ([<neg>:елъ]? | [<neg>:е2лъ]? | [<proh>:хъала]? | [<cond>:аада]? | [<cond>:ада]?))[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbFutStem[-no_pref] [<verb><fut>:] ([<neg>:ии]? | [<neg>:ии2]?))[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 (VerbClassPrefixes VerbImpStem[-no_pref] [<verb><imp>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
-(VerbClassPrefixes CvbPstStem[-no_pref] [<cvb><pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes CvbPstStem[-no_pref] [<cvb><pst>:] ([<neg>:ида]? | [<neg>:инна]?))[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 (VerbClassPrefixes CvbPrsStem[-no_pref] [<cvb><prs>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+
+# participle
+VerbPstStem[no_pref] ([<ptcp>:идда] | [<ptcp>:{д}а]) [<pst>:]
+VerbFutStem[no_pref] [<ptcp>:б]
+CvbPrsStem[no_pref] [<ptcp>:исс] [<prs>:]
+VerbInfStem[no_pref] [<ptcp>:л1аб] [<fut>:]
+
+(VerbClassPrefixes VerbPstStem[-no_pref] ([<ptcp>:идда] | [<ptcp>:{д}а]) [<pst>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbFutStem[-no_pref] [<ptcp>:б])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes CvbPrsStem[-no_pref] [<ptcp>:исс] [<prs>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
+(VerbClassPrefixes VerbInfStem[-no_pref] [<ptcp>:л1аб] [<fut>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 
 # linker
 VerbLinker [<verb><prs>:]
