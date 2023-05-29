@@ -9,14 +9,22 @@ Alphabet
   %{ва1%}:ва
   %{ва2%}:ва
   %{в%}:0
-  %{у%}:у
   %{и%}:0
 ;
 
 Rules
 
-"н assimilation before д: акьбегьан-{д}а > акьбегьан-на"
+"д -> н assimilation: акьбегьан-{д}а > акьбегьан-на"
 %{д%}:н <=> %{н%}:н _ ;
+
+"д -> н assimilation"
+%{д%}:н <=> н _ ;
+
+"д -> н assimilation"
+%{д%}:н <=> 2 _ ;
+
+"д -> л assimilation"
+%{д%}:л <=> л _ ;
 
 "н turns to nasalization of previous vowel before ч: бегьан-чекIу > бегьа2-чекIу"
 %{н%}:2 <=> _ ч ;
@@ -56,7 +64,4 @@ Rules
 
 "{в} turns to в before и: ар{в}-и > арв-и"
 %{в%}:в <=> _ и ;
-
-"{у} turns to и in some 4th class adjective forms: микI{и}-{у}л > микI-ил"
-%{у%}:и <=> %{и%}:0  _ ;
 
