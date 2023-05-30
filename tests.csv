@@ -1,30 +1,30 @@
 analysis,form,mustpass,source,page,description
-се<num><1-2cl><pl>,sebi,pass,Bokarev,71,NumberOne
-ечIи<num><card>,etʃʼida,pass,Bokarev,71,NumbersUpToTen - Upper-Gakvarian 2
-чIе<num>,tʃʼe,pass,Bokarev,71,NumbersUpToTen - Gigatlian 2 without Card
+се<num><h.pl>,sebi,pass,Bokarev,71,NumberOne
+еч1и<num><card>,etʃʼida,pass,Bokarev,71,NumbersUpToTen - Upper-Gakvarian 2
+ч1е<num>,tʃʼe,pass,Bokarev,71,NumbersUpToTen - Gigatlian 2 without Card
 гьазза<num><card>,hazzada,pass,Bokarev,72,NumbersUpToTen - Ten
-ацIа<num>,atsʼa,pass,Bokarev,72,NumbersUpToTen - Ten without Card
-ацIа<num><teen_linker>,atsʼal,pass,Bokarev,72,NumberTen with TeenLinker
-ачIу{н}<num><card>,atʃʼunna,pass,Bokarev,72,NumberNinety
-ачIу{н}<num>,atʃʼun,pass,Bokarev,72,NumberNinety without Card
-ачIу{н}<num><card>,atʃʼunda,ignore,Bokarev,72,NumberNinety with wrong (Gigatlian) variation of Card
-ачIу{н}<num><linker><3cl>,atʃʼuⁿtʃʼekʼub,pass,Bokarev,72,NumberNinety with Linker and NumClass
+ац1а<num>,atsʼa,pass,Bokarev,72,NumbersUpToTen - Ten without Card
+ац1а<num><teen_linker>,atsʼal,pass,Bokarev,72,NumberTen with TeenLinker
+ач1у{н}<num><card>,atʃʼunna,pass,Bokarev,72,NumberNinety
+ач1у{н}<num>,atʃʼun,pass,Bokarev,72,NumberNinety without Card
+ач1у{н}<num><card>,atʃʼunda,ignore,Bokarev,72,NumberNinety with wrong (Gigatlian) variation of Card
+ач1у{н}<num><linker><nh1.pl>,atʃʼuⁿtʃʼekʼub,pass,Bokarev,72,NumberNinety with Linker and NumClass
 бегьа{н}<num>,behan,pass,Bokarev,72,NumberOneHundred without Card
 бегьа{н}<num><card>,behanna,pass,Bokarev,72,NumberOneHundred - Upper-Gakvarian variation
 бегьа{н}<num><card>,behanda,ignore,Bokarev,72,NumberOneHundred wtih wrong (Gigatlian) variation of Card
 бешан<num><card>,beʃanda,pass,Bokarev,72,NumberOneHundred Gigatlian variation
-бегьа{н}<num><linker><4cl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
-бешан<num><linker><1-5cl>,beʃantʃʼekʼu,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
+бегьа{н}<num><linker><nh2.pl>,behaⁿtʃʼekʼul,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
+бешан<num><linker><pl>,beʃantʃʼekʼu,pass,Bokarev,72,NumberOneHundred wtih Linker and NumClass - Upper-Gakvarian variation
 азал<num>,azal,pass,Bokarev,73,NumberOneThousand without Card
 азал<num><card>,azalda,pass,Bokarev,73,NumberOneThousand
-азал<num><linker><5cl>,azaltʃʼekʼʷi,pass,Bokarev,73,NumberOneThousand with Linker and NumClass
+азал<num><linker><nh3.pl>,azaltʃʼekʼʷi,pass,Bokarev,73,NumberOneThousand with Linker and NumClass
 бо{ва1}<num><crowns>,bowatsʼa,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 40 without Card
 акь{ва2}<num><crowns><card>,atɬʼwatsʼada,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 70
-гьакь<num><crowns><linker><1-5cl>,hatɬʼazatʃʼekʼu,pass,Bokarev,72,CompositeNumbers - Gigatilan 70 with Linker and NumClass
-бекь{а}<num><crowns><linker><2cl>,betɬʼatʃʼekʼʷi,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 80 with Linker and NumClass
+гьакь<num><crowns><linker><pl>,hatɬʼazatʃʼekʼu,pass,Bokarev,72,CompositeNumbers - Gigatilan 70 with Linker and NumClass
+бекь{а}<num><crowns><linker><f.pl>,betɬʼatʃʼekʼʷi,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 80 with Linker and NumClass
 бо{ва1}<num><hndr>,boːbehan,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 400 without Card
 акь{ва2}<num><hndr><card>,atɬʼbehanna,pass,Bokarev,73,CompositeNumbers - Upper-Gakvarian 700
-ечI{е}<num><hndr><linker><4cl>,etʃʼbehaⁿtʃʼekʼul,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 200 without Linker and NumClass
+еч1{е}<num><hndr><linker><nh2.pl>,etʃʼbehaⁿtʃʼekʼul,pass,Bokarev,72,CompositeNumbers - Upper-Gakvarian 200 without Linker and NumClass
 зин<noun><sg><nom>,zin,pass,Bokarev,37,NomSg
 зин<noun><sg><erg>,zinad,pass,Bokarev,37,GenGroupCasesSg - Ergative
 зин<noun><sg><aff>,zinaxe,pass,Bokarev,37,DatGroupCasesSg - Affective
