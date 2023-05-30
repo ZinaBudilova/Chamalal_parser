@@ -51,9 +51,9 @@ LEXICON PronounClassSuffixes
 <gen><f.sg>:й[sg]
 <gen><f.sg>:[pl]
 <gen><h.pl>:бе
-<gen><nonh1.sg>:б
-<gen><nonh2.sg>:л
-<gen><nonh3.sg>:й
+<gen><nh1.sg>:б
+<gen><nh2.sg>:л
+<gen><nh3.sg>:й
 <gen><nh.pl>:йе
 
 LEXICON PronounDatLikeCases
