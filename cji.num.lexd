@@ -87,18 +87,18 @@ LEXICON OneClass
 <f.sg>:[vgakv]
 <f.sg>:й[gig]
 <h.pl>:би
-<nonh1.sg>:б
-<nonh2.sg>:л
-<nonh3.sg>:
+<nh1.sg>:б
+<nh2.sg>:л
+<nh3.sg>:
 <nh.pl>:е[vgakv]
 <nh.pl>:р[gig]
 
 LEXICON NumClass
 <m.pl>:у[vgakv]
 <f.pl>:ви[vgakv]
-<nonh1.pl>:уб[vgakv]
-<nonh2.pl>:ул[vgakv]
-<nonh3.pl>:ви[vgakv]
+<nh1.pl>:уб[vgakv]
+<nh2.pl>:ул[vgakv]
+<nh3.pl>:ви[vgakv]
 <pl>:у[gig]
 
 LEXICON Crowns
