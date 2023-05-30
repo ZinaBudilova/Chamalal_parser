@@ -17,7 +17,7 @@ CvbPrsStem[no_pref] [<cvb><prs>:]
 (VerbClassPrefixes CvbPrsStem[-no_pref] [<cvb><prs>:])[^[a-pref,e-pref,ia-pref,i-pref,n-pref,u-pref]]
 
 # participle
-VerbPstStem[no_pref] ([<ptcp>:идда] | [<ptcp>:{д}а]) [<pst>:]
+VerbPstStem[no_pref] ([<ptcp>:идда] | [<ptcp>:{д2}а]) [<pst>:]
 VerbFutStem[no_pref] [<ptcp>:б]
 CvbPrsStem[no_pref] [<ptcp>:исс] [<prs>:]
 VerbInfStem[no_pref] [<ptcp>:л1аб] [<fut>:]
